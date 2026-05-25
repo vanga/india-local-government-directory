@@ -1,0 +1,16 @@
+[project]
+name = "india-local-government-directory"
+version = "0.1.0"
+description = "Scraper and data exports for India's Local Government Directory village roster"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "pyarrow>=14",
+]
+
+[project.scripts]
+lgd-directory = "india_lgd.lgd_directory:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
